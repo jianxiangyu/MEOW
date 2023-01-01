@@ -1,5 +1,7 @@
 # MEOW
 A heterogeneous graph contrastive learning model that considers both meta-path contexts and weighted negative samples.
+https://arxiv.org/abs/2212.13847
+This paper is accepted by SDM 2023.
 
 ## Environment Settings
 > python==3.9.0 \
