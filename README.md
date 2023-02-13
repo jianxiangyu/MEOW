@@ -6,7 +6,7 @@
 
 ## MEOW
 This is the source code of paper ["Heterogeneous Graph Contrastive Learning with Meta-path Contexts and Weighted Negative Samples"](https://arxiv.org/abs/2212.13847)
-![avatar](./MEOW.png)
+![The proposed framework](./MEOW.png)
 
 ## Environment Settings
 > python==3.9.0 \
