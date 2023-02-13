@@ -1,7 +1,12 @@
-# MEOW
-A heterogeneous graph contrastive learning model that considers both meta-path contexts and weighted negative samples.
-https://arxiv.org/abs/2212.13847
-This paper is accepted by SDM 2023.
+# Heterogeneous Graph Contrastive Learning with Meta-path Contexts and Weighted Negative Samples (SDM 2023)
+ <!--
+ A heterogeneous graph contrastive learning model that considers both meta-path contexts and weighted negative samples.
+ https://arxiv.org/abs/2212.13847
+ -->
+
+## MEOW
+This is the source code of paper ["Heterogeneous Graph Contrastive Learning with Meta-path Contexts and Weighted Negative Samples"](https://arxiv.org/abs/2212.13847.)
+![avatar](./MEOW.png)
 
 ## Environment Settings
 > python==3.9.0 \
