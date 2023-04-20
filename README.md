@@ -29,7 +29,7 @@ url：https://pan.baidu.com/s/1vlBrC4S7EZgowGyHGF8apg
 pwd：n84e
 
 ## Citation
-``
+```
 @inbook{doi:10.1137/1.9781611977653.ch5,
 author = {Jianxiang Yu and Xiang Li},
 title = {Heterogeneous Graph Contrastive Learning with Meta-path Contexts and Weighted Negative Samples},
@@ -40,4 +40,4 @@ doi = {10.1137/1.9781611977653.ch5},
 URL = {https://epubs.siam.org/doi/abs/10.1137/1.9781611977653.ch5},
 eprint = {https://epubs.siam.org/doi/pdf/10.1137/1.9781611977653.ch5},
 }
-``
+```
