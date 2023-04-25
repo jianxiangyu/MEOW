@@ -17,11 +17,11 @@ This is the source code of paper ["Heterogeneous Graph Contrastive Learning with
 > faiss-gpu==1.7.2
 
 ## Usage
-Fisrt, go into ./code, and then you can use the following commend to run our model: 
+Go into ./code, and then you can use the following commend to run our model MEOW: 
+Go into ./code_adameow, and then you can use the following commend to run our model AdaMEOW: 
 > python main.py acm --gpu=0
 
-Here, "acm" can be replaced by "dblp", "aminer".
-
+Here, "acm" can be replaced by "dblp", "aminer","imdb".
 
 Some files in the './data' could not be uploaded because they were over 25MB. 
 All the data files we store in 
