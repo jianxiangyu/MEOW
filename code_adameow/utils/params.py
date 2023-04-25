@@ -150,8 +150,6 @@ def set_params():
         args = dblp_params()
     elif dataset == "aminer":
         args = aminer_params()
-    elif dataset == "freebase":
-        args = freebase_params()
     elif dataset == 'imdb':
         args = imdb_params()
     return args

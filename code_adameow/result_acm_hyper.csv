@@ -1,2 +1,0 @@
-Time,save_emb,turn,dataset,ratio,gpu,seed,nb_epochs,hidden_dim,embed_dim,start_eval,auc_limit,eva_lr,eva_wd,patience,l2_coef,lr,dropout,tau,nei_max,feat_mask,adj_mask,type_num
-2023-04-25 11:27,True,0,acm,"[20, 40, 60]",3,0,1200,64,64,410,97,0.03,0,10,1e-05,5e-05,0.3,1.0,"[690, 690]",0.3,0.2,"[4019, 7167, 60]"
