@@ -6,6 +6,7 @@
 
 ## MEOW
 This is the source code of paper ["Heterogeneous Graph Contrastive Learning with Meta-path Contexts and Weighted Negative Samples"](https://arxiv.org/abs/2212.13847)
+**Follow-up work AdaMEOW is in review.**
 ![The proposed framework](./MEOW.png)
 
 ## Environment Settings
@@ -17,8 +18,8 @@ This is the source code of paper ["Heterogeneous Graph Contrastive Learning with
 > faiss-gpu==1.7.2
 
 ## Usage
-Go into ./code, and then you can use the following commend to run our model $\textbf{MEOW}$;
-or go into ./code_adameow, and then you can use the following commend to run our model $\textbf{AdaMEOW}$: 
+Go into ./code_meow, and then you can use the following commend to run our model **MEOW**;
+or go into ./code_adameow, and then you can use the following commend to run our model **AdaMEOW**: 
 > python main.py acm --gpu=0
 
 Here, "acm" can be replaced by "dblp", "aminer","imdb".
