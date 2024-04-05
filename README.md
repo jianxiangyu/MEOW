@@ -31,14 +31,11 @@ pwd：n84e
 
 ## Citation
 ```
-@inbook{doi:10.1137/1.9781611977653.ch5,
-author = {Jianxiang Yu and Xiang Li},
-title = {Heterogeneous Graph Contrastive Learning with Meta-path Contexts and Weighted Negative Samples},
-booktitle = {Proceedings of the 2023 SIAM International Conference on Data Mining (SDM)},
-chapter = {},
-pages = {37-45},
-doi = {10.1137/1.9781611977653.ch5},
-URL = {https://epubs.siam.org/doi/abs/10.1137/1.9781611977653.ch5},
-eprint = {https://epubs.siam.org/doi/pdf/10.1137/1.9781611977653.ch5},
+@article{yu2024heterogeneous,
+  title={Heterogeneous Graph Contrastive Learning With Meta-Path Contexts and Adaptively Weighted Negative Samples},
+  author={Yu, Jianxiang and Ge, Qingqing and Li, Xiang and Zhou, Aoying},
+  journal={IEEE Transactions on Knowledge and Data Engineering},
+  year={2024},
+  publisher={IEEE}
 }
 ```
