@@ -1,12 +1,13 @@
-# Heterogeneous Graph Contrastive Learning with Meta-path Contexts and Weighted Negative Samples (SDM 2023)
- <!--
- A heterogeneous graph contrastive learning model that considers both meta-path contexts and weighted negative samples.
- https://arxiv.org/abs/2212.13847
- -->
+# Heterogeneous Graph Contrastive Learning with Meta-path Contexts and Adaptively Weighted Negative Samples (TKDE 2024)
 
-## MEOW
-This is the source code of paper ["Heterogeneous Graph Contrastive Learning with Meta-path Contexts and Weighted Negative Samples"](https://arxiv.org/abs/2212.13847).  
-**Follow-up work AdaMEOW is in review.**
+
+## MEOW & AdaMEOW
+This is the source code of two papers:
+
+- $\textbf{MEOW}:$ ["Heterogeneous Graph Contrastive Learning with Meta-path Contexts and Weighted Negative Samples (SDM 2023)"](https://epubs.siam.org/doi/abs/10.1137/1.9781611977653.ch5)
+
+- $\textbf{AdaMEOW}:$  ["Heterogeneous Graph Contrastive Learning with Meta-path Contexts and Adaptively Weighted Negative Samples (TKDE 2024)"](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10487103).
+
 ![The proposed framework](./MEOW.png)
 
 ## Environment Settings
