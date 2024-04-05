@@ -1,5 +1,4 @@
-# Heterogeneous Graph Contrastive Learning with Meta-path Contexts and Adaptively Weighted Negative Samples (TKDE 2024)
-
+# Heterogeneous Graph Contrastive Learning with Meta-path Contexts and Adaptively Weighted Negative Samples 
 
 ## MEOW & AdaMEOW
 This is the source code of two papers:
