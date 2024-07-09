@@ -21,7 +21,7 @@ def acm_params():
     parser.add_argument('--eva_wd', type=float, default=0)
     
     # The parameters of learning process
-    parser.add_argument('--patience', type=int, default=20)
+    parser.add_argument('--patience', type=int, default=30)
     parser.add_argument('--l2_coef', type=float, default=0)
     parser.add_argument('--lr', type=float, default=0.0007)
     parser.add_argument('--dropout', type=float, default=0.2)
