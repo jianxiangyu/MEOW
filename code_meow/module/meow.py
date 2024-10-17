@@ -20,6 +20,7 @@ class MEOW(nn.Module):
         self.adj = torch.stack(adjs).mean(axis=0)
         self.nei_index = [i.cuda() for i in nei_index]
         self.nei_index_count = [i.to_dense().sum(axis=1).unsqueeze(axis=1).reshape(adjs[0].size(0),1) for i in self.nei_index]
+        self.nei_index_count = [torch.where(i >0, i, 1) for i in self.nei_index_count]
 
         if dropout:
             self.dropout = nn.Dropout(dropout)
@@ -52,6 +53,9 @@ class MEOW(nn.Module):
             h_view_embed, h_mask_embed, h_coarse = self.aggregate_nei_dblp(feats, mask_feat)
         elif self.dataset == 'aminer':
             h_view_embed, h_mask_embed, h_coarse = self.aggregate_nei_aminer(feats, mask_feat)
+        elif self.dataset == 'imdb':
+            h_view_embed, h_mask_embed, h_coarse = self.aggregate_nei_acm(feats, mask_feat)
+
 
         z_new = self.generate_loss(h_view_embed, h_mask_embed, mask_adjs, adjs_norm)
         loss_info, loss_proto = self.contrast_loss(h_coarse, z_new, num_cluster)
