@@ -133,6 +133,48 @@ def load_aminer(ratio, type_num):
     test = [th.LongTensor(i) for i in test]
     return [nei_a, nei_r], [feat_p, feat_a, feat_r], [pap, prp], label, train, val, test
 
+
+
+def load_imdb(ratio, type_num):
+    # m a d k
+    # 4275 5432 2083 7313
+    path = "../data/imdb/"    
+    label = np.load(path + "labels.npy").astype('int32')
+    label = encode_onehot(label)
+    label = th.FloatTensor(label)
+
+    feat_m = sp.load_npz(path + "m_feat.npz").astype("float32")
+    feat_a = sp.eye(type_num[1])
+    feat_d = sp.eye(type_num[2])
+    feat_k = sp.eye(type_num[3])
+
+    nei_a = sp.load_npz(path + "nei_a.npz")
+    nei_d = sp.load_npz(path + "nei_d.npz")
+    nei_k = sp.load_npz(path + "nei_k.npz")
+    nei_a = sparse_mx_to_torch_sparse_tensor(nei_a)
+    nei_d = sparse_mx_to_torch_sparse_tensor(nei_d)
+    nei_k = sparse_mx_to_torch_sparse_tensor(nei_k)
+
+    mam = sp.load_npz(path + 'mam.npz')
+    mdm = sp.load_npz(path + 'mdm.npz')
+    mkm = sp.load_npz(path + 'mkm.npz')
+
+
+    train = [np.load(path + "train_" + str(i) + ".npy") for i in ratio]
+    test = [np.load(path + "test_" + str(i) + ".npy") for i in ratio]
+    val = [np.load(path + "val_" + str(i) + ".npy") for i in ratio]
+
+    feat_m = th.FloatTensor(preprocess_features(feat_m))
+    feat_a = th.FloatTensor(preprocess_features(feat_a))
+    feat_d = th.FloatTensor(preprocess_features(feat_d))
+    feat_k = th.FloatTensor(preprocess_features(feat_k))
+
+    train = [th.LongTensor(i) for i in train]
+    val = [th.LongTensor(i) for i in val]
+    test = [th.LongTensor(i) for i in test]
+    return [nei_a, nei_d, nei_k], [feat_m, feat_a, feat_d, feat_k], [mam, mdm, mkm], label, train, val, test
+
+
 def load_data(dataset, ratio, type_num):
     if dataset == "acm":
         data = load_acm(ratio, type_num)
@@ -140,4 +182,6 @@ def load_data(dataset, ratio, type_num):
         data = load_dblp(ratio, type_num)
     elif dataset == "aminer":
         data = load_aminer(ratio, type_num)
+    elif dataset == "imdb":
+        data = load_imdb(ratio, type_num)
     return data
